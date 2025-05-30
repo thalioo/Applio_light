@@ -41,7 +41,7 @@ bh, ah = signal.butter(
 )
 
 # UMAP SURROGATE
-path_umap_surr = '/Users/tomasandrade/Documents/BSC/ICHOIR/Applio_light/assets/umap/umap_n100_3D_SURR.sav'
+path_umap_surr = './assets/umap_n100_3D_SURR.sav'
 umap_surrogate = joblib.load(path_umap_surr)
 
 input_audio_path2wav = {}

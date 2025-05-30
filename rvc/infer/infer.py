@@ -438,7 +438,7 @@ class VoiceConverter:
         if not self.loaded_model or self.loaded_model != weight_root:
             self.load_model(weight_root)
             if self.cpt is not None:
-                self.setup_network()
+                # self.setup_network()
                 self.setup_vc_instance()
             self.loaded_model = weight_root
 
@@ -507,4 +507,4 @@ class VoiceConverter:
         """
         if self.cpt is not None:
             self.vc = VC(self.tgt_sr, self.config)
-            self.n_spk = self.cpt["config"][-3]
+            # self.n_spk = self.cpt["config"][-3]
